@@ -2,3 +2,49 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.mission-card {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  max-width: 300px;
+  margin: 1rem 0rem;
+  background-color: #e4e4e4;
+}
+
+.mission-card :hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.mission-card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mission-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: chocolate;
+  margin: 0px;
+}
+
+.mission-number {
+  background-color: gray;
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.mission-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

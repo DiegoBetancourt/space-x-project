@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchHistory } from "./api";
+import MissionCard from "./components/MissionCard";
 import "./styles.css";
 
 export default function App() {
@@ -21,19 +22,19 @@ export default function App() {
 
   return (
     <div>
-      <label>Start Date</label>
+      <label>Start Date: </label>
       <input type="date" onChange={(e) => setStartDate(e.target.value)} />
       <br />
       <br />
 
-      <label>End Date</label>
+      <label>End Date: </label>
       <input type="date" onChange={(e) => setEndDate(e.target.value)} />
 
-      <ul>
+      <div className="mission-list">
         {data.map((item, idx) => {
-          return <li key={idx}>{item.title}</li>;
+          return <MissionCard key={idx} mission={item} />;
         })}
-      </ul>
+      </div>
     </div>
   );
 }
