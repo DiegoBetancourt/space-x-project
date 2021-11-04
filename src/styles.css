@@ -48,3 +48,30 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+.date-input {
+  display: block;
+  flex: 1;
+  text-align: center;
+}
+
+.date-input > label {
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.date-input > input {
+  padding: 0.5rem 0.25rem;
+  border-radius: 3px;
+}
+
+.filters {
+  display: flex;
+  flex: 1;
+  justify-items: space-between;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+}
